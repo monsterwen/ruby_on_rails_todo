@@ -3,6 +3,11 @@ class TodosController<ApplicationController
    @todo=Todo.new 
   end
   
+  def index
+    @todos=Todo.all
+  end
+  
+  
   def create
     @todo=Todo.new(todo_params)
     if @todo.save
