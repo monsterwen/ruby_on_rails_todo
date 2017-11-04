@@ -36,6 +36,6 @@ class TodosController<ApplicationController
   # white listing all allowed to pass the the page 
      def todo_params
        # .require(:todo) will create a hash map {name:, description}
-       params.require(:todo).permit(:name,:desctiption)
+       params.require(:todo).permit(:name,:description)
      end
 end
